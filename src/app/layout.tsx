@@ -42,18 +42,18 @@ export const metadata: Metadata = {
     },
 }
 
-export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
-        <body className={`${inter.variable} ${montserrat.variable} ${rubikDoodleShadow.variable} font-sans`}>
-        {/*<ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>*/}
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <CartProvider>
-                <Navbar />
-                <main className="container mx-auto px-4 py-8">{children}</main>
-            </CartProvider>
-        </ThemeProvider>
-        </body>
+            <body className={`${inter.variable} ${montserrat.variable} ${rubikDoodleShadow.variable} font-sans`}>
+                {/*<ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>*/}
+                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                    <CartProvider>
+                        <Navbar />
+                        <main className="container mx-auto px-4 py-8">{children}</main>
+                    </CartProvider>
+                </ThemeProvider>
+            </body>
         </html>
     )
 }
