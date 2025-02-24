@@ -56,7 +56,7 @@ export default function Checkout() {
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
-          <div className="text-lg font-bold">Total to pay: ${total.toFixed(2)}</div>
+          <div className="text-lg font-bold">Total to pay: Ksh {total.toFixed(2)}</div>
         </CardContent>
         <CardFooter>
           <Button

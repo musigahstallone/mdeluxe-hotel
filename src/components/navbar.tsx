@@ -55,7 +55,7 @@ export function Navbar() {
                 </span>
               </div>
               <span className="text-primary font-semibold text-lg">
-                ${(item.price * item.quantity).toFixed(2)}
+                Ksh {(item.price * item.quantity).toFixed(2)}
               </span>
             </li>
           ))}
@@ -66,7 +66,7 @@ export function Navbar() {
       {cartItems.length > 0 && (
         <div className="mt-6 border-t pt-4 flex justify-between font-bold text-xl">
           <span>Total:</span>
-          <span>${total.toFixed(2)}</span>
+          <span>Ksh {total.toFixed(2)}</span>
         </div>
       )}
 
